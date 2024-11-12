@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".view.PhoneDetailsFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -109,6 +110,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lyPrice"
         app:layout_constraintVertical_bias="0.05">
 
+
         <TextView
             android:id="@+id/tvFormaPago"
             android:layout_width="0dp"
@@ -137,11 +139,15 @@
         android:clickable="true"
         android:backgroundTint="@color/dark_primary_color"
         android:src="@drawable/ic_back"
+        android:contentDescription="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fabEmail"
         app:layout_constraintHorizontal_bias="0.67"
         app:layout_constraintStart_toStartOf="parent"
-        android:focusable="true" />
+        android:focusable="true">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabEmail"
@@ -152,9 +158,11 @@
         android:clickable="true"
         android:backgroundTint="@color/dark_primary_color"
         android:src="@drawable/ic_mail"
+        android:contentDescription="Enviar correo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:focusable="true" />
+        android:focusable="true"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

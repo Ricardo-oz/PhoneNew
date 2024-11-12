@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/divider_color"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
    >
 
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
         android:backgroundTint="@color/dark_primary_color"
-
+        android:contentDescription="Salir de la aplicación"
         android:src="@drawable/ic_exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
